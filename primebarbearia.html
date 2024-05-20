@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Barber</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .serviços, .galeria, .contato {
+            margin: 2rem 0;
+        }
+        .serviços h2, .galeria h2, .contato h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .serviços ul {
+            list-style: none;
+            padding: 0;
+        }
+        .serviços ul li {
+            background: #fff;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .galeria img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 5px;
+        }
+        .contato form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contato form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        .contato form input, .contato form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contato form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Prime Barbearia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#serviços">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="serviços" class="serviços">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Corte de cabelo masculino</li>
+                <li>Combo corte e barba</li>
+                <li>Corte</li>
+                <li>Só Maquina n1 ou n2</li>
+                <li>Acabamento</li>
+                <li>Barba completa</li>
+            </ul>
+        </section>
+        <section id="galeria" class="galeria">
+            <h2>Galeria</h2>
+            <img src="foto1.jpg" alt="corte regua">
+            <img src="foto2.jpg" alt="Corte regua da barba">
+            <img src="foto3.jpg" alt="Não sei">
+        </section>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" pattern=".+@.+" required>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
