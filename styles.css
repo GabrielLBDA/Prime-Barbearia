@@ -147,13 +147,13 @@ nav ul li a:focus {
         width: 100%;
     }
 }
-
-.serviços, .galeria, .contato {
+.serviços, .galeria, .contato{
     margin: 2rem 0;
     padding: 1rem;
     border: 2px solid #ccc;
     border-radius: 5px;
 }
+
 .redes-sociais {
     margin: 2rem 0;
 }
