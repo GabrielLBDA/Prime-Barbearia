@@ -154,4 +154,38 @@ nav ul li a:focus {
     border: 2px solid #ccc;
     border-radius: 5px;
 }
+.redes-sociais {
+    margin: 2rem 0;
+}
+
+.redes-sociais h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.redes-sociais ul li {
+    margin-bottom: 0.5rem;
+}
+
+.redes-sociais ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.redes-sociais ul li a:hover {
+    background-color: #ddd;
+}
 
